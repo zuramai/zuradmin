@@ -1,0 +1,130 @@
+
+
+@charset "UTF-8";
+/**
+ * Zuradmin
+ *
+ * Zuradmin is a clean & modern HTML5 admin template based on Bootstrap 4. 
+ * Zuradmin will make it easier for you to create your own admin interface.
+ *
+ * @package	Zuradmin
+ * @version	0.1
+ * @author 	Ahmad Saugi
+ * @url 	https://zuradmin.devover.id
+ * 
+ */
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Variable
+ * 2. Layout
+ *    2.1 Sidebar
+ *    2.2 Header
+ *    2.3 Content
+ *    2.4 Misc
+ * 3. Bootstrap Override
+ * 	  3.1 Card
+ * 	  3.2 Form
+ * 	  3.3 List
+ * 	  3.4 Alert
+ * 	  3.5 Progress
+ * 	  3.6 Table
+ * 	  3.7 Tooltip
+ * 	  3.8 Modal
+ * 	  3.9 Nav
+ * 	  3.10 Pagination
+ * 	  3.11 Badge
+ * 	  3.12 Button
+ * 	  3.13 Media
+ * 	  3.14 Breadcrumb
+ * 	  3.15 Accordion
+ * 	  3.16 Popover
+ * 	  3.17 Grid
+ * 	  3.18 Navbar
+ * 	  3.19 Dropdown
+ * 	  3.20 Tab
+ * 	  3.21 Progressbar
+ * 	  3.22 Jumbotron
+ * 	  3.23 Carousel
+ * 4. Theme Style
+ * 	  4.1 Misc
+ * 	  4.2 Section
+ * 	  4.3 Page
+ * 	  4.4 Layout
+ * 	  4.5 Animation
+ * 5. Utilities
+ * 6. Responsive
+ */
+
+@import "./../../../node_modules/bootstrap/scss/bootstrap.scss";
+ 
+/* 1. Variable */
+@import "mixin";
+@import "variables";
+@import "icons";
+
+/*  2. Layout  */
+@import "custom/structure/general";
+/* 2.1 Sidebar */
+@import "custom/structure/sidebar";
+/* 2.2 Header */
+@import "custom/structure/header";
+/* 2.3 Content */
+@import "custom/structure/content";
+/* 2.4 Misc */
+@import "custom/components/misc/statistic";
+
+
+/* 3. Components */
+/* 3.1 Card */
+@import "custom/components/card";
+/* 3.2 Form */
+@import "custom/components/form";
+/* 3.3 List */
+@import "custom/components/list";
+/* 3.4 Alert */
+@import "custom/components/alert";
+/* 3.5 Progress */
+@import "custom/components/progress";
+/* 3.6 Table */
+@import "custom/components/table";
+/* 3.7 Tooltip */
+/* 3.8 Modal */
+/* 3.9 Nav */
+@import "custom/components/nav";
+/* 3.10 Pagination */
+@import "custom/components/pagination";
+/* 3.11 Badge */
+@import "custom/components/badge";
+/* 3.12 Button */
+@import "custom/components/button";
+/* 3.13 Media */
+@import "custom/components/media";
+/* 3.14 Breadcrumb */
+@import "custom/components/breadcrumb";
+/* 3.15 Accordion */
+@import "custom/components/accordion";
+/* 3.16 Popover */
+@import "custom/components/poppover";
+/* 3.17 Grid */
+/* 3.18 Navbar */
+/* 3.19 Dropdown */
+@import "custom/components/dropdown";
+/* 3.20 Tab */
+/* 3.21 Jumbotron */
+@import "custom/components/jumbotron";
+/* 3.22 Carousel */
+@import "custom/components/carousel";
+
+/* 5. Utilities */
+@import "utilities";
+
+/* 5. Responsive */
+@media screen and (max-width: 1200px) {
+    .sidebar-wrapper {
+        left: -255px;
+    }
+    #main {
+        margin-left: 0;
+    }
+}

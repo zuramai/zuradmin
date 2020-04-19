@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zuradmin</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/charts/apexcharts.css">
+    <link rel="stylesheet" href="assets/vendors/css/ui/perfect-scrollbar.css">
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+    <div id="app">
+        @@include('partials/sidebar.html')
+        <div id="main">
+            @@include('partials/header.html')
+            <div class="content">
+                <section class="statistics">
+                    <div class="row">
+                        <div class="col-md-3 col-12">
+                            <div class="statistic">
+                                <div class='statistic-text'>
+                                    <h3>3,082</h3>
+                                    <span>Users</span>
+                                </div>
+                                <div class="statistic-icon">
+                                    <i class='feather-32 blue' data-feather="user"></i> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12">
+                            <div class="statistic">
+                                <div class='statistic-text'>
+                                    <h3>$10,239</h3>
+                                    <span>Revenue</span>
+                                </div>
+                                <div class="statistic-icon">
+                                    <i class='feather-32 yellow' data-feather="dollar-sign"></i> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12">
+                            <div class="statistic">
+                                <div class='statistic-text'>
+                                    <h3>43,124</h3>
+                                    <span>Likes</span>
+                                </div>
+                                <div class="statistic-icon">
+                                    <i class='feather-32 green' data-feather="thumbs-up"></i> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12">
+                            <div class="statistic">
+                                <div class='statistic-text'>
+                                    <h3>43,124</h3>
+                                    <span>Dislikes</span>
+                                </div>
+                                <div class="statistic-icon">
+                                    <i class='feather-32 red' data-feather="thumbs-down"></i> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header">Revenue Statistics</div>
+                            <div class="card-body">
+                                <div id="revenue-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Browser Statistics
+                            </div>
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-25">
+                                        <div class="browser-info">
+                                            <p class="mb-25">Google Chrome</p>
+                                        </div>
+                                        <div class="stastics-info text-right">
+                                            <p class="mb-25"><i data-feather="arrow-down" class='color-red'></i> 42% </p>
+                                        </div>
+                                    </div>
+                                    <div class="progress progress-bar-primary mb-2">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="42" aria-valuemin="42" aria-valuemax="100"
+                                            style="width:42%"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-25">
+                                        <div class="browser-info">
+                                            <p class="mb-25">Firefox</p>
+                                        </div>
+                                        <div class="stastics-info text-right">
+                                            <p class="mb-25"><i data-feather="arrow-up" class='color-green'></i> 82% </p>
+                                        </div>
+                                    </div>
+                                    <div class="progress progress-bar-primary mb-2">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="83" aria-valuemax="100"
+                                            style="width:82%"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-25">
+                                        <div class="browser-info">
+                                            <p class="mb-25">Google Chrome</p>
+                                        </div>
+                                        <div class="stastics-info text-right">
+                                            <p class="mb-25"><i data-feather="arrow-up" class='color-green'></i> 73% </p>
+                                        </div>
+                                    </div>
+                                    <div class="progress progress-bar-primary mb-2">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="73" aria-valuemin="73" aria-valuemax="100"
+                                            style="width:73%"></div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('partials/footer.html')

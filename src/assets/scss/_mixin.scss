@@ -1,0 +1,19 @@
+@mixin button-variant-custom($color, $type:'default') {
+    border:none;
+    @if($type == 'default') {
+        background: map-get($buttons, $color); 
+        box-shadow: map-get($buttons, "#{$color}_box_shadow");
+        &:active:hover, &:hover:not([disabled]) {
+            background: map-get($buttons, "#{$color}_hover"); 
+            box-shadow: map-get($buttons, "#{$color}_hover_box_shadow");
+        }
+    } @else if ($type == 'outline') {
+        background: transparent; 
+        border: 1px solid map-get($outline_buttons, "#{$color}_outline_border");
+        color: map-get($outline_buttons, "#{$color}_outline_text");
+        &:active:hover, &:hover:not([disabled]) {
+            color: #fff;
+            background: map-get($outline_buttons, "#{$color}_outline_hover_bg"); 
+        }
+    }
+}

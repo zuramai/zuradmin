@@ -1,0 +1,16 @@
+.progress {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 0.357rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: #EDEDED;
+    border-radius: 1.28rem;
+}
+.progress-bar {
+    background: #457fca; 
+    background: -webkit-linear-gradient(to right, #5691c8, #457fca); 
+    background: linear-gradient(to right, #5691c8, #457fca);
+}

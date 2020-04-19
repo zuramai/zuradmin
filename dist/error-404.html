@@ -1,0 +1,25 @@
+{% extends './layouts/error.njk' %}
+{% block title %}404{% endblock %}
+{% block body %}
+<body class='error'>
+    <header>
+        <div class="container-fluid">
+            <img src="assets/images/logo/logo.png" class='logo'>
+        </div>
+    </header>
+    <section class="the-error">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 error-text">
+                    <h1><span class='text-blue'>Sorry,</span> this page <br>isn't available <br>right now :(</h1>
+                    <p>The page you're looking for couldn't be found</p>
+                    <a href="index.html">< &nbsp; Go back to home page</a>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="assets/images/isometric/1.png" alt="Error" srcset="" class='error-image'>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+{% endblock %}

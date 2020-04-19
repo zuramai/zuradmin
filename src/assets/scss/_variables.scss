@@ -1,0 +1,144 @@
+/**
+ * TABLE OF CONTENTS
+ *
+ * 	1. Theme Colors
+ * 	2. Styling
+ * 		2.1 Alert	
+ * 		2.2 Buttons
+ *
+ */
+
+/* 1. Theme Colors */
+$theme-colors: (
+  "primary": #2c86f5,
+  "secondary": #ced6e0,
+  "success": #10ac84,
+  "danger": #e03f3f,
+  "warning": #ff9f43,
+  "info": #0abde3,
+  "dark": #222f3e,
+  "light": #efefef
+);
+
+
+/* 2.1 Alert */
+$alerts: (
+	"primary": (
+		"color": #fff,
+		"background-color": $primary,
+		"border-color": #2f81e6,
+	),
+	"secondary": (
+		"color": #fff,
+		"background-color": $secondary,
+		"border-color": #fff,
+	),
+	"success": (
+		"color": #fff,
+		"background-color": $success,
+		"border-color": #fff,
+	),
+	"danger": (
+		"color": #fff,
+		"background-color": $danger,
+		"border-color": #fff,
+	),
+	"warning": (
+		"color": #fff,
+		"background-color": $warning,
+		"border-color": #fff,
+	),
+	"info": (
+		"color": #fff,
+		"background-color": $info,
+		"border-color": #fff,
+	),
+	"dark": (
+		"color": #fff,
+		"background-color": $dark,
+		"border-color": #fff,
+	),
+	"light": (
+		"color": #222,
+		"background-color": $light,
+		"border-color": #fff,
+	),
+);
+
+
+/* 2.2 Buttons */
+$buttons: (
+  "primary": $primary,
+  "primary_box_shadow": 2px 3px 10px rgba(48, 128, 227, .4),
+  "primary_hover": #0a7cd3,
+  "primary_hover_box_shadow": 2px 3px 10px rgba(48, 128, 227, .7),
+
+  "secondary": #7f848a,
+  "secondary_box_shadow": 2px 3px 10px rgba(100, 100, 100, .4),
+  "secondary_hover": rgb(134, 141, 150),
+  "secondary_hover_box_shadow": 2px 3px 10px rgba(100, 100, 100, .7),
+
+  "success": #10ac84,
+  "success_box_shadow": 2px 3px 10px rgba(11, 148, 114, .4),
+  "success_hover": #0b9270,
+  "success_hover_box_shadow": 2px 3px 10px rgba(14, 170, 131, 0.7),
+
+  "danger": #e03f3f,
+  "danger_box_shadow": 2px 3px 10px rgba(199, 47, 47,.4),
+  "danger_hover": #c73535,
+  "danger_hover_box_shadow": 2px 3px 10px rgba(199, 47, 47, .7),
+
+  "warning": #ff9f43,
+  "warning_box_shadow": 2px 3px 10px rgba(230, 131, 40, 0.4),
+  "warning_hover": #ec9039,
+  "warning_hover_box_shadow": 2px 3px 10px rgba(230, 131, 40, 0.7),
+
+  "info": #0abde3,
+  "info_box_shadow": 2px 3px 10px rgba(14, 166, 201, .4),
+  "info_hover": #09afd4,
+  "info_hover_box_shadow": 2px 3px 10px rgba(14, 166, 201, .7),
+
+  "dark": #222f3e,
+  "dark_box_shadow": 2px 3px 10px rgba(34, 47, 62,.4),
+  "dark_hover": #1a2430,
+  "dark_hover_box_shadow": 2px 3px 10px rgba(34, 47, 62,.7),
+
+  "light": #efefef,
+  "light_box_shadow": 2px 3px 10px rgba(220, 220, 220,.4),
+  "light_hover": #ececec,
+  "light_hover_box_shadow": 2px 3px 10px rgba(220, 220, 220,.7),
+);
+
+$outline_buttons: (
+  "primary_outline_border": $primary,
+  "primary_outline_text": $primary,
+  "primary_outline_hover_bg": $primary,
+
+  "secondary_outline_border": $secondary,
+  "secondary_outline_text": $secondary,
+  "secondary_outline_hover_bg": $secondary,
+
+  "success_outline_border": $success,
+  "success_outline_text": $success,
+  "success_outline_hover_bg": $success,
+
+  "danger_outline_border": $danger,
+  "danger_outline_text": $danger,
+  "danger_outline_hover_bg": $danger,
+
+  "warning_outline_border": $warning,
+  "warning_outline_text": $warning,
+  "warning_outline_hover_bg": $warning,
+
+  "info_outline_border": $info,
+  "info_outline_text": $info,
+  "info_outline_hover_bg": $info,
+
+  "dark_outline_border": $dark,
+  "dark_outline_text": $dark,
+  "dark_outline_hover_bg": $dark,
+
+  "light_outline_border": $light,
+  "light_outline_text": $light,
+  "light_outline_hover_bg": $light,
+);

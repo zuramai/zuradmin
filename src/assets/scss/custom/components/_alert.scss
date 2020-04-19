@@ -1,0 +1,16 @@
+.alert {
+    border-radius: .4rem;
+    border:none
+}
+.alert-icon i {
+    font-size: 14px;
+    margin-right: 0.1rem;
+}
+
+@each $color, $map in $alerts {
+    .alert-#{$color} {
+        color: map-get($map, "color");
+        background-color: map-get($map, "background-color");
+        border-color: map-get($map, "border-color");
+    }
+}

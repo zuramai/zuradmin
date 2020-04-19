@@ -1,0 +1,31 @@
+.statistic {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.statistic span {
+    font-size: 14px;
+    color: #666;
+}
+.statistic-text h3 {
+    font-weight: bold;
+}
+.statistic-icon {
+
+}
+.statistic-icon > .blue  {
+    color: #5983fc;
+}
+.statistic-icon > .yellow  {
+    color: #f1c40f;
+}
+.statistic-icon > .green  {
+    color: #1abc9c;
+}
+.statistic-icon > .red  {
+    color: #e74c3c;
+}

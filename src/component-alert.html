@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert - Zuradmin</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/charts/apexcharts.css">
+    <link rel="stylesheet" href="assets/vendors/css/ui/perfect-scrollbar.css">
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+    <div id="app">
+        @@include('partials/sidebar.html')
+        <div id="main">
+            @@include('partials/header.html')
+            <div class="content">
+                <div class="content-header">
+                    <h3>Alert</h3>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="#">Components</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Alert</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                Default Alert
+                            </div>
+                            <div class="card-body">
+                                <div class="alert alert-primary">This is a primary alert.</div>
+                                <div class="alert alert-secondary">This is a secondary alert.</div>
+                                <div class="alert alert-success">This is a success alert.</div>
+                                <div class="alert alert-danger">This is a danger alert.</div>
+                                <div class="alert alert-warning">This is a warning alert.</div>
+                                <div class="alert alert-info">This is a info alert.</div>
+                                <div class="alert alert-light">This is a light alert.</div>
+                                <div class="alert alert-dark">This is a dark alert.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                Alert with icon
+                            </div>
+                            <div class="card-body">
+                                <p class='text-muted'>Add <code>.alert-icon</code> classes or <code>disabled</code>
+                                    property instead.</p>
+                                <div class="buttons">
+                                    <div class="alert alert-primary alert-icon"><i class='fas fa-check-circle'></i> This is a primary alert.</div>
+                                    <div class="alert alert-secondary alert-icon"><i class='fas fa-check-circle'></i> This is a secondary alert.</div>
+                                    <div class="alert alert-success alert-icon"><i class='fas fa-check-circle'></i> This is a success alert.</div>
+                                    <div class="alert alert-danger alert-icon"><i class='fas fa-check-circle'></i> This is a danger alert.</div>
+                                    <div class="alert alert-warning alert-icon"><i class='fas fa-check-circle'></i> This is a warning alert.</div>
+                                    <div class="alert alert-info alert-icon"><i class='fas fa-check-circle'></i> This is a info alert.</div>
+                                    <div class="alert alert-light alert-icon"><i class='fas fa-check-circle'></i> This is a light alert.</div>
+                                    <div class="alert alert-dark alert-icon"><i class='fas fa-check-circle'></i> This is a dark alert.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                Alert with Title
+                            </div>
+                            <div class="card-body">
+                                <div class="alert alert-primary" role="alert">
+                                    <h4 class="alert-heading">Well done!</h4>
+                                    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so
+                                        that you can see how spacing within an alert works with this kind of content.</p>
+                                </div>
+                                <div class="alert alert-success" role="alert">
+                                    <h4 class="alert-heading">Well done!</h4>
+                                    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so
+                                        that you can see how spacing within an alert works with this kind of content.</p>
+                                </div>
+                                <div class="alert alert-secondary" role="alert">
+                                    <h4 class="alert-heading">Well done!</h4>
+                                    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so
+                                        that you can see how spacing within an alert works with this kind of content.</p>
+                                </div>
+                                <div class="alert alert-warning" role="alert">
+                                    <h4 class="alert-heading">Well done!</h4>
+                                    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so
+                                        that you can see how spacing within an alert works with this kind of content.</p>
+                                </div>
+                                <div class="alert alert-danger" role="alert">
+                                    <h4 class="alert-heading">Well done!</h4>
+                                    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so
+                                        that you can see how spacing within an alert works with this kind of content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                Dismissable Alert
+                            </div>
+                            <div class="card-body">
+                                <p class='text-muted'>Add <code>.alert-dismissible .fade .show</code> classes.</p>
+                                <div class="buttons">
+                                    <div class="alert alert-primary alert-dismissible fade show">
+                                        <strong>Processing!</strong> 
+                                        This is a primary alert.
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-secondary alert-icon alert-dismissible fade show">
+                                        <strong>Hello!</strong> 
+                                        This is a secondary alert.
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-success alert-icon alert-dismissible fade show">
+                                        <strong>Success!</strong> 
+                                        This is a success alert.
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-danger alert-icon alert-dismissible fade show">
+                                        <strong>Error!</strong> 
+                                        This is a danger alert.
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-warning alert-icon alert-dismissible fade show">
+                                        <strong>Success!</strong> 
+                                        This is a warning alert.
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-info alert-icon alert-dismissible fade show">
+                                        <strong>Success!</strong> 
+                                        This is a info alert.
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-light alert-icon alert-dismissible fade show">
+                                        <strong>Success!</strong> 
+                                        This is a light alert.
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-dark alert-icon alert-dismissible fade show">
+                                        <strong>Success!</strong> 
+                                        This is a dark alert.
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('partials/footer.html')

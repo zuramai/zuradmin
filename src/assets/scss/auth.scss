@@ -1,0 +1,76 @@
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "./custom/components/form";
+@import "mixin";
+@import "variables";
+@import "./custom/components/button";
+
+#auth {
+    min-height: 100vh;
+    background: $primary;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+}
+a {
+    transition: all .2s;
+}
+a:hover {
+    text-decoration: none;
+    color:#084fa6;
+}
+.card {
+    width: 100%;
+    box-shadow: 10px 10px 15px rgba(8, 39, 189, .3);
+    border-radius: 5px;
+}
+.card-container  {
+    padding: 0 4rem;
+}
+.h-full {
+    height:100vh;
+}
+.auth-logo {
+    width: 150px
+}
+.form {
+    position: relative;
+}
+.form-group {
+    margin-bottom: .8rem;
+}
+.form-group label {
+    font-size: 12px;
+}
+.auth-header {
+    margin-bottom: 1rem;
+}
+.auth-header h3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 1.3rem;
+    margin-top: 15px;
+}
+.form-group.submit {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 1.3rem;
+}
+.form-group.submit span {
+    margin-top: 20px;
+}
+.form-group > span {
+    font-size: 13px;
+    color: #444;
+}
+
+#password-label {
+    display: block;
+    overflow: hidden;
+}
+#password-label span {
+    float: left;
+}
+#password-label a {
+    float: right;
+    clear: right;
+}

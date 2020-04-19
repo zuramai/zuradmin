@@ -1,0 +1,65 @@
+.form-control {
+    transition: all .2s;
+    &:focus {
+        outline: $primary;
+        box-shadow: 0px 0px 5px rgba($primary,.5);
+        background-color: #fcfcfc;
+    }
+}
+.form-control ~ {
+    .focus-border {
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background-color: #3399FF;
+            transition: 0.2s;
+            transition-delay: 0.2s;
+        }
+        &:after {
+            top: auto; bottom: 0; right: auto; left: 0; transition-delay: 0.6s;
+        }
+        i:before, i:after {
+            content: ""; position: absolute; top: 0; left: 0; width: 2px; height: 0; background-color: #3399FF; transition: 0.2s;
+        }
+        i:after {
+            left: auto; right: 0; top: auto; bottom: 0; transition-delay: 0.4s;
+        }
+        .focus-border {
+            &:before, &:after {
+                width: 100%; transition: 0.2s; transition-delay: 0.6s;
+            }
+            &:after {
+                transition-delay: 0.2s;
+            }
+            i:before, i:after {
+                height: 100%; transition: 0.2s;
+            }
+            i:after {
+                transition-delay: 0.4s;
+            }
+        }
+    }
+}
+.form-control:focus ~ {
+    .focus-border {
+        &:before, &:after  {
+            width: 100%; transition: 0.2s; transition-delay: 0.6s;
+        }   
+        &:after {
+            transition-delay: 0.2s;
+        }
+        i {
+            &:before, &:after {
+                height: 100%; transition: 0.2s;
+            }
+            &:after {
+                transition-delay: 0.4s;
+            }
+        }
+    }
+
+}

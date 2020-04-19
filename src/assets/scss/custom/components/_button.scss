@@ -1,0 +1,63 @@
+.buttons .btn {
+    margin: 0 10px 10px 0
+}
+.btn {
+    &[disabled] {
+        cursor: default
+    }
+    &.btn-secondary {
+        @include button-variant-custom('secondary')
+    }
+    &.btn-primary {
+        @include button-variant-custom('primary')
+    }
+    &.btn-success {
+        @include button-variant-custom('success')
+    }
+    &.btn-danger {
+        @include button-variant-custom('danger')
+    }
+    &.btn-warning {
+        @include button-variant-custom('warning');
+        color: #fff;
+    }
+    &.btn-dark {
+        @include button-variant-custom('dark')
+    }
+    &.btn-light {
+        @include button-variant-custom('light')
+    }
+    &.btn-info {
+        @include button-variant-custom('info')
+    }
+
+    &.btn-outline-secondary {
+        @include button-variant-custom('secondary', 'outline')
+    }
+    &.btn-outline-primary {
+        @include button-variant-custom('primary', 'outline')
+    }
+    &.btn-outline-success {
+        @include button-variant-custom('success', 'outline')
+    }
+    &.btn-outline-danger {
+        @include button-variant-custom('danger', 'outline')
+    }
+    &.btn-outline-warning {
+        @include button-variant-custom('warning', 'outline')
+    }
+    &.btn-outline-dark {
+        @include button-variant-custom('dark', 'outline')
+    }
+    &.btn-outline-light {
+        @include button-variant-custom('light', 'outline')
+    }
+    &.btn-outline-info {
+        @include button-variant-custom('info', 'outline')
+    }
+    &.btn-icon {
+        & i {
+            font-size: 12px;
+        }
+    }
+}

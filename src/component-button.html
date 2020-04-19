@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button - Zuradmin</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/charts/apexcharts.css">
+    <link rel="stylesheet" href="assets/vendors/css/ui/perfect-scrollbar.css">
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+    <div id="app">
+        @@include('partials/sidebar.html')
+        <div id="main">
+            @@include('partials/header.html')
+            <div class="content">
+                <div class="content-header">
+                    <h3>Button</h3>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="#">Components</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Buttons</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                Default Buttons
+                            </div>
+                            <div class="card-body">
+                                <p class='text-muted'>Use the <code>.btn .btn-{color}</code> classes.</p>
+                                <div class="buttons">
+                                    <button class="btn btn-primary">Primary</button>
+                                    <button class="btn btn-secondary">Secondary</button>
+                                    <button class="btn btn-success">Success</button>
+                                    <button class="btn btn-danger">Danger</button>
+                                    <button class="btn btn-warning">Warning</button>
+                                    <button class="btn btn-info">Info</button>
+                                    <button class="btn btn-dark">Dark</button>
+                                    <button class="btn btn-light">Light</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                Outline Buttons
+                            </div>
+                            <div class="card-body">
+                                <p class='text-muted'>Use the <code>.btn .btn-outline-{color}</code> classes.</p>
+                                <div class="buttons">
+                                    <button class="btn btn-outline-primary">Primary</button>
+                                    <button class="btn btn-outline-secondary">Secondary</button>
+                                    <button class="btn btn-outline-success">Success</button>
+                                    <button class="btn btn-outline-danger">Danger</button>
+                                    <button class="btn btn-outline-warning">Warning</button>
+                                    <button class="btn btn-outline-info">Info</button>
+                                    <button class="btn btn-outline-dark">Dark</button>
+                                    <button class="btn btn-outline-light">Light</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                Disabled Buttons
+                            </div>
+                            <div class="card-body">
+                                <p class='text-muted'>Add <code>.btn-disabled</code> classes or <code>disabled</code> property instead.</p>
+                                <div class="buttons">
+                                    <button class="btn btn-primary" disabled>Primary</button>
+                                    <button class="btn btn-secondary" disabled>Secondary</button>
+                                    <button class="btn btn-success" disabled>Success</button>
+                                    <button class="btn btn-danger" disabled>Danger</button>
+                                    <button class="btn btn-warning" disabled>Warning</button>
+                                    <button class="btn btn-info" disabled>Info</button>
+                                    <button class="btn btn-dark" disabled>Dark</button>
+                                    <button class="btn btn-light" disabled>Light</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                Button Size
+                            </div>
+                            <div class="card-body">
+                                <p class='text-muted'>Use the <code>.btn-sm</code> or <code>.btn-md</code> or <code>.btn-lg</code> property instead.</p>
+                                <div class="buttons">
+                                    <button class="btn btn-warning btn-sm">Small</button>
+                                    <button class="btn btn-danger btn-md">Normal</button>
+                                    <button class="btn btn-primary btn-lg">Large</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                Icon Button
+                            </div>
+                            <div class="card-body">
+                                <p class='text-muted'>Add <code>.btn-disabled</code> classes or <code>disabled</code> property instead.</p>
+                                <div class="buttons">
+                                    <button class="btn btn-primary btn-icon" ><i class='fas fa-edit'></i> Primary</button>
+                                    <button class="btn btn-secondary btn-icon"><i class='fas fa-edit'></i> Secondary</button>
+                                    <button class="btn btn-success btn-icon"><i class='fas fa-edit'></i> Success</button>
+                                    <button class="btn btn-danger btn-icon"><i class='fas fa-edit'></i> Danger</button>
+                                    <button class="btn btn-warning btn-icon"><i class='fas fa-edit'></i> Warning</button>
+                                    <button class="btn btn-info btn-icon"><i class='fas fa-edit'></i> Info</button>
+                                    <button class="btn btn-dark btn-icon"><i class='fas fa-edit'></i> Dark</button>
+                                    <button class="btn btn-light btn-icon"><i class='fas fa-edit'></i> Light</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                Button Size
+                            </div>
+                            <div class="card-body">
+                                <p class='text-muted'>Use the <code>.btn-sm</code> or <code>.btn-md</code> or <code>.btn-lg</code> property instead.</p>
+                                <div class="buttons">
+                                    <button class="btn btn-warning btn-sm">Small</button>
+                                    <button class="btn btn-danger btn-md">Normal</button>
+                                    <button class="btn btn-primary btn-lg">Large</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('partials/footer.html')

@@ -1,0 +1,20 @@
+.header {
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px #e4e4e4;
+    background-color: #fff;
+    width: 100%;
+}
+.header .nav-item {
+    list-style: none;
+}
+.header .header-left {
+    padding: 1rem;
+}
+.header .nav-item .user-icon {
+    padding: 0.5rem 1rem;
+}
+.header .nav-item .user-icon img {
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+    height: 40px;
+}
